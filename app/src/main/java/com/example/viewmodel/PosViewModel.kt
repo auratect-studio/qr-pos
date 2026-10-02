@@ -70,7 +70,12 @@ data class ActivePayment(
 }
 
 data class PosUiState(
-    val merchant: MerchantProfile = MerchantProfile(),
+    val merchant: MerchantProfile = MerchantProfile(
+        businessName = "Малий Богдан Олександрович",
+        taxNumber = "3872211492",
+        defaultBank = UkrainianBank.PUMB,
+        iban = PlatformBillingConfig.MASTER_IBAN
+    ),
     val selectedBank: UkrainianBank = UkrainianBank.PUMB,
     val amountInput: String = "",
     val selectedTipAmount: Double = 0.0,

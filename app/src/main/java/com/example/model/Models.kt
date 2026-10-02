@@ -85,8 +85,8 @@ enum class UkrainianBank(
 }
 
 data class MerchantProfile(
-    val businessName: String = "Малий Богдан Олександрович",
-    val taxNumber: String = "3872211492",
+    val businessName: String = "",
+    val taxNumber: String = "",
     val legalAddress: String = "",
     val defaultBank: UkrainianBank = UkrainianBank.PUMB,
     val iban: String = "UA573348510000026202124234254",
