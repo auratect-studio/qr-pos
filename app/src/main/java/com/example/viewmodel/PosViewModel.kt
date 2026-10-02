@@ -71,7 +71,7 @@ data class ActivePayment(
 
 data class PosUiState(
     val merchant: MerchantProfile = MerchantProfile(),
-    val selectedBank: UkrainianBank = UkrainianBank.MONOBANK,
+    val selectedBank: UkrainianBank = UkrainianBank.PUMB,
     val amountInput: String = "",
     val selectedTipAmount: Double = 0.0,
     val paymentPurpose: String = "Оплата за послуги/товари",

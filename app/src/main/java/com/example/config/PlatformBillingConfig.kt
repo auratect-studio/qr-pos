@@ -17,23 +17,23 @@ object PlatformBillingConfig {
      * Вставте сюди ваше посилання на банку Monobank (наприклад, https://send.monobank.ua/jar/XXXXXX)
      * або сторінку еквайрингу LiqPay / WayForPay.
      */
-    const val MASTER_PAYMENT_URL = "https://send.monobank.ua/jar/auratect_billing"
+    const val MASTER_PAYMENT_URL = "https://mobile-app.pumb.ua/1YAsa"
 
     /**
      * Офіційний IBAN рахунок власника платформи для поповнення за банківськими реквізитами (СЕП НБУ).
      * Вкажіть ваш IBAN рахунок ФОП або юридичної особи.
      */
-    const val MASTER_IBAN = "UA213220010000026001234567890"
+    const val MASTER_IBAN = "UA573348510000026202124234254"
 
     /**
      * Податковий номер (ЄДРПОУ для компанії або РНОКПП/ІПН для ФОП).
      */
-    const val MASTER_TAX_NUMBER = "38492015"
+    const val MASTER_TAX_NUMBER = "3872211492"
 
     /**
      * Офіційне найменування отримувача коштів.
      */
-    const val MASTER_RECIPIENT_NAME = "ФОП Auratect QR-POS"
+    const val MASTER_RECIPIENT_NAME = "Малий Богдан Олександрович"
 
     /**
      * Шаблон призначення платежу при безготівковому банківському переказі.

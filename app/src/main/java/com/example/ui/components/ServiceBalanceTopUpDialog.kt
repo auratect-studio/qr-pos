@@ -364,7 +364,7 @@ fun ServiceBalanceTopUpDialog(
                     Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                         Icon(imageVector = Icons.Default.Payment, contentDescription = null, tint = Color.White)
                         Text(
-                            text = "Оплатити через Google Pay / Картку",
+                            text = "Оплатити онлайн (ПУМБ / Google Pay / Картка)",
                             fontWeight = FontWeight.Bold,
                             color = Color.White
                         )
