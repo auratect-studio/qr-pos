@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -175,7 +176,7 @@ fun AnalyticsScreen(
                     onClick = onOpenSubscription,
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(52.dp)
+                        .defaultMinSize(minHeight = 52.dp)
                         .testTag("unlock_analytics_pro_btn"),
                     shape = RoundedCornerShape(16.dp),
                     colors = ButtonDefaults.buttonColors(
@@ -184,8 +185,10 @@ fun AnalyticsScreen(
                     )
                 ) {
                     Text(
-                        text = "Підключити Pro (5$/міс або 55$/рік • знижка 8%)",
-                        fontWeight = FontWeight.ExtraBold
+                        text = "Підключити Безліміт Pro (199 ₴/міс)",
+                        fontWeight = FontWeight.ExtraBold,
+                        maxLines = 1,
+                        softWrap = false
                     )
                 }
 
@@ -448,7 +451,7 @@ fun AnalyticsScreen(
                                     color = if (uiState.merchant.isPremium) GoldPremium else MaterialTheme.colorScheme.onSurface
                                 )
                                 Text(
-                                    text = if (uiState.merchant.isPremium) "Ви заощаджуєте 0.5% з кожного платежу" else "5$/місяць або 55$/рік • Економія коштів",
+                                    text = if (uiState.merchant.isPremium) "Ви заощаджуєте комісію з кожного платежу" else "199 ₴/місяць або 1999 ₴/рік • 0% комісії",
                                     style = MaterialTheme.typography.bodySmall,
                                     color = MaterialTheme.colorScheme.onSurfaceVariant
                                 )

@@ -1205,7 +1205,7 @@ fun MerchantProfileModal(
                                         value = webhookGatewayUrl,
                                         onValueChange = { webhookGatewayUrl = it },
                                         label = { Text("URL шлюзу (Edge Gateway / Cloudflare)") },
-                                        placeholder = { Text("https://qr-pos-gateway.antigravity.workers.dev") },
+                                        placeholder = { Text("https://auratect-qr-pos-gateway.auratect.workers.dev") },
                                         leadingIcon = {
                                             Icon(Icons.Default.CloudQueue, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
                                         },
@@ -1544,7 +1544,7 @@ fun MerchantProfileModal(
                                 monobankToken = monobankToken.trim(),
                                 checkboxApiKey = checkboxApiKey.trim(),
                                 autoFiscalizeWithCheckbox = autoFiscalizeWithCheckbox,
-                                webhookGatewayUrl = webhookGatewayUrl.trim().ifBlank { "https://qr-pos-gateway.antigravity.workers.dev" },
+                                webhookGatewayUrl = webhookGatewayUrl.trim().ifBlank { "https://auratect-qr-pos-gateway.auratect.workers.dev" },
                                 customMerchantId = customMerchantId.trim()
                             )
                             onSaveProfile(updated)

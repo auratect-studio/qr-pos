@@ -47,12 +47,12 @@ enum class UkrainianBank(
         id = "pumb",
         displayName = "ПУМБ (Перший Українсь. Міжнар. Банк)",
         shortName = "ПУМБ",
-        defaultIban = "UA343348510000026003456789012",
+        defaultIban = "UA573348510000026202124234254",
         defaultCardNumber = "4149 4990 9876 5432",
         brandColorHex = 0xFFB91C1C,
         secondaryColorHex = 0xFFFCA5A5,
         deepLinkScheme = "mybis://",           // офіційний deep-link схема додатку MyПУМБ
-        webFallbackUrl = "https://www.pumb.ua/p2p", // Реальний платіжний P2P-розділ ПУМБ
+        webFallbackUrl = "https://mobile-app.pumb.ua/1YAsa", // Реальне посилання на МаніБокс ПУМБ
         hasNativeP2pLink = false,
         packageName = "ua.pumb.pumbmobile"
     ),

@@ -65,7 +65,7 @@ class MerchantPreferencesStore(private val context: Context) {
                 null
             } else {
                 val bankName = prefs[PreferencesKeys.DEFAULT_BANK_NAME]
-                val bank = UkrainianBank.entries.firstOrNull { it.name == bankName } ?: UkrainianBank.MONOBANK
+                val bank = UkrainianBank.entries.firstOrNull { it.name == bankName } ?: UkrainianBank.PUMB
 
                 MerchantProfile(
                     businessName = prefs[PreferencesKeys.BUSINESS_NAME] ?: "",
@@ -80,7 +80,7 @@ class MerchantPreferencesStore(private val context: Context) {
                     tagline = prefs[PreferencesKeys.TAGLINE] ?: "Дякуємо за покупку! Слава Україні! 🇺🇦",
                     isPremium = prefs[PreferencesKeys.IS_PREMIUM] ?: false,
                     autoFiscalizeWithCheckbox = prefs[PreferencesKeys.AUTO_FISCALIZE] ?: false,
-                    webhookGatewayUrl = prefs[PreferencesKeys.WEBHOOK_GATEWAY_URL] ?: "https://qr-pos-gateway.antigravity.workers.dev",
+                    webhookGatewayUrl = prefs[PreferencesKeys.WEBHOOK_GATEWAY_URL] ?: "https://auratect-qr-pos-gateway.auratect.workers.dev",
                     customMerchantId = prefs[PreferencesKeys.CUSTOM_MERCHANT_ID] ?: "",
                     pinHash = prefs[PreferencesKeys.PIN_HASH] ?: "",
                     biometricEnabled = prefs[PreferencesKeys.BIOMETRIC_ENABLED] ?: true,

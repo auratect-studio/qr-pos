@@ -412,7 +412,7 @@ fun ServiceBalanceTopUpDialog(
                                     softWrap = false
                                 )
                                 Text(
-                                    text = "Швидка оплата карткою або GPay",
+                                    text = "Google Pay • Apple Pay • Картка",
                                     fontSize = 11.sp,
                                     color = Color.White.copy(alpha = 0.85f),
                                     maxLines = 1,

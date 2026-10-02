@@ -95,6 +95,7 @@ export default {
       const purpose = url.searchParams.get('purpose') || 'Оплата замовлення';
       const bank = url.searchParams.get('bank') || 'mono';
       const card = (url.searchParams.get('card') || '').replace(/\s+/g, '');
+      const pumbUrl = url.searchParams.get('pumb_url') || 'https://mobile-app.pumb.ua/1YAsa';
 
       const html = `<!DOCTYPE html>
 <html lang="uk">
@@ -142,8 +143,8 @@ export default {
       🟩 Відкрити в Приват24
     </a>
 
-    <a href="mybis://transfer" class="btn btn-pumb" onclick="fallbackLink(event, 'https://www.pumb.ua/p2p')">
-      🟥 Відкрити в ПУМБ (MyПУМБ)
+    <a href="${pumbUrl}" class="btn btn-pumb" onclick="fallbackLink(event, '${pumbUrl}')">
+      🟥 Відкрити в ПУМБ (МаніБокс / MyПУМБ)
     </a>
 
     <a href="sense://pay" class="btn btn-sense" onclick="fallbackLink(event, 'https://sensebank.ua/perevod-s-karty-na-kartu')">

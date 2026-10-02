@@ -116,7 +116,8 @@ object QrGenerator {
         // 2. Універсальний платіжний міст (Web Gateway)
         val cleanGateway = gatewayBaseUrl.trim().trimEnd('/')
         if (cleanGateway.isNotBlank()) {
-            return "$cleanGateway/pay?to=$encodedRecipient&iban=$cleanIban&amount=$formattedAmount&purpose=$encodedPurpose&bank=${bank.id}&card=$cleanCard"
+            val pumbParam = if (bank == UkrainianBank.PUMB) "&pumb_url=" + java.net.URLEncoder.encode("https://mobile-app.pumb.ua/1YAsa", "UTF-8") else ""
+            return "$cleanGateway/pay?to=$encodedRecipient&iban=$cleanIban&amount=$formattedAmount&purpose=$encodedPurpose&bank=${bank.id}&card=$cleanCard$pumbParam"
         }
 
         // 3. Прямі платіжні посилання (fallback)
@@ -126,7 +127,7 @@ object QrGenerator {
             UkrainianBank.PRIVATBANK ->
                 "https://next.privat24.ua/money-transfer/card?amount=$formattedAmount&purpose=$encodedPurpose"
             UkrainianBank.PUMB ->
-                "https://www.pumb.ua/p2p?amount=$formattedAmount"
+                "https://mobile-app.pumb.ua/1YAsa"
             UkrainianBank.SENSE_BANK ->
                 "https://sensebank.ua/perevod-s-karty-na-kartu"
             UkrainianBank.ABANK ->

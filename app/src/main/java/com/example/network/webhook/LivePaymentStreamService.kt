@@ -58,7 +58,7 @@ class LivePaymentStreamService(
 
     private val eventAdapter = moshi.adapter(BankWebhookEvent::class.java)
 
-    var currentGatewayUrl: String = "https://qr-pos-gateway.antigravity.workers.dev"
+    var currentGatewayUrl: String = "https://auratect-qr-pos-gateway.auratect.workers.dev"
         private set
     var currentMerchantId: String = "default"
         private set

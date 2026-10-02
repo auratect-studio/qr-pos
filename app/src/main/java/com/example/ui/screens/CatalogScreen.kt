@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -169,7 +170,7 @@ fun CatalogScreen(
                     onClick = onOpenSubscription,
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(52.dp)
+                        .defaultMinSize(minHeight = 52.dp)
                         .testTag("unlock_catalog_pro_btn"),
                     shape = RoundedCornerShape(16.dp),
                     colors = ButtonDefaults.buttonColors(
@@ -178,8 +179,10 @@ fun CatalogScreen(
                     )
                 ) {
                     Text(
-                        text = "Підключити Pro (5$/міс або 55$/рік • знижка 8%)",
-                        fontWeight = FontWeight.ExtraBold
+                        text = "Підключити Безліміт Pro (199 ₴/міс)",
+                        fontWeight = FontWeight.ExtraBold,
+                        maxLines = 1,
+                        softWrap = false
                     )
                 }
 

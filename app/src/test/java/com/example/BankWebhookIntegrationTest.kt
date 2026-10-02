@@ -60,7 +60,7 @@ class BankWebhookIntegrationTest {
         val profileWithTax = MerchantProfile(
             businessName = "ФОП Коваленко",
             taxNumber = "3198765432",
-            webhookGatewayUrl = "https://qr-pos-gateway.antigravity.workers.dev"
+            webhookGatewayUrl = "https://auratect-qr-pos-gateway.auratect.workers.dev"
         )
         assertEquals("fop-3198765432", profileWithTax.merchantId)
 
@@ -75,7 +75,7 @@ class BankWebhookIntegrationTest {
         assertEquals("merchant-demo", emptyProfile.merchantId)
 
         val webhookUrl = "${profileWithTax.webhookGatewayUrl.trimEnd('/')}/webhook/mono/${profileWithTax.merchantId}"
-        assertEquals("https://qr-pos-gateway.antigravity.workers.dev/webhook/mono/fop-3198765432", webhookUrl)
+        assertEquals("https://auratect-qr-pos-gateway.auratect.workers.dev/webhook/mono/fop-3198765432", webhookUrl)
     }
 
     @Test

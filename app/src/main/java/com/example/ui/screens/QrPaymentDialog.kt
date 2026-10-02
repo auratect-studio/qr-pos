@@ -874,7 +874,7 @@ fun QrPaymentDialog(
             text = {
                 Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     Text("Формування та надсилання справжніх електронних чеків текстового формату (через SMS, Email або месенджери) доступне у підписці QR POS Pro.")
-                    Text("Вартість: 5$ на місяць або 55$ на рік (знижка -8%). Також ви отримуєте 0% комісії, повну аналітику та каталог товарів!", fontWeight = FontWeight.SemiBold)
+                    Text("Вартість: 199 ₴ на місяць або 1999 ₴ на рік. Також ви отримуєте 0% комісії, повну аналітику та каталог товарів!", fontWeight = FontWeight.SemiBold)
                 }
             },
             confirmButton = {
