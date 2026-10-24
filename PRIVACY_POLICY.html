@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-POS — Політика конфіденційності / Privacy Policy</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --surface-color: #151d30;
+            --card-border: rgba(255, 255, 255, 0.08);
+            --primary-color: #10b981;
+            --primary-hover: #059669;
+            --accent-blue: #3b82f6;
+            --accent-green: #22c55e;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 0;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 20px 80px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .logo-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 9999px;
+            padding: 6px 18px;
+            margin-bottom: 16px;
+            font-size: 0.9rem;
+            color: #34d399;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin: 0 0 8px 0;
+            letter-spacing: -0.02em;
+        }
+
+        .meta-info {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .lang-btn {
+            background: var(--surface-color);
+            border: 1px solid var(--card-border);
+            color: var(--text-secondary);
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn:hover, .lang-btn.active {
+            background: var(--primary-color);
+            color: #ffffff;
+            border-color: var(--primary-color);
+        }
+
+        .callout-box {
+            background: rgba(16, 185, 129, 0.08);
+            border-left: 4px solid var(--primary-color);
+            padding: 18px 20px;
+            border-radius: 0 12px 12px 0;
+            margin: 24px 0;
+        }
+
+        .callout-title {
+            font-weight: 700;
+            color: #6ee7b7;
+            margin-bottom: 6px;
+        }
+
+        section {
+            background: var(--surface-color);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            margin-top: 0;
+            margin-bottom: 16px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p, ul {
+            color: var(--text-secondary);
+            font-size: 0.98rem;
+            margin-top: 0;
+            margin-bottom: 14px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-badge">⚡ QR-POS • Point of Sale &amp; Payments</div>
+            <h1 id="page-title">Політика конфіденційності</h1>
+            <div class="meta-info">
+                <span><strong>Розробник:</strong> AuraTect Studio</span> &bull; 
+                <span><strong>Додаток:</strong> QR-POS (com.auratect.qrpos)</span> &bull; 
+                <span><strong>Оновлено:</strong> Жовтень 2026</span>
+            </div>
+            <div class="lang-switch">
+                <button class="lang-btn active" id="btn-uk" onclick="switchLang('uk')">🇺🇦 Українська</button>
+                <button class="lang-btn" id="btn-en" onclick="switchLang('en')">🇬🇧 English</button>
+            </div>
+        </header>
+
+        <!-- UKRAINIAN -->
+        <main id="content-uk">
+            <div class="callout-box">
+                <div class="callout-title">🔒 Принцип Local-First та конфіденційність за замовчуванням</div>
+                <p style="margin-bottom: 0;">Додаток <strong>QR-POS</strong> розроблено згідно з принципом <em>Privacy-by-Design</em>. Каталог товарів, кошик замовлень, історія чеків та торговельні операції зберігаються <strong>виключно локально на вашому пристрої</strong>. Ми не збираємо, не передаємо і не продаємо ваші бізнес-дані стороннім організаціям.</p>
+            </div>
+
+            <section>
+                <h2>1. Які дані обробляються</h2>
+                <p>QR-POS є автономним терміналом торговельної точки. Усі робочі дані залишаються під повним контролем підприємця:</p>
+                <ul>
+                    <li><strong>Каталог товарів та послуг:</strong> назви, ціни, артикули, категорії (зберігаються в зашифрованій локальній базі даних додатка).</li>
+                    <li><strong>Історія розрахунків:</strong> суми чеків, час транзакції, статус оплати (зберігаються виключно в пам'яті пристрою).</li>
+                    <li><strong>Платіжні реквізити мерчанта:</strong> IBAN або ідентифікатор гаманця, які використовуються виключно для генерації клієнтського QR-коду на екрані пристрою.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>2. Дозволи додатку (Permissions)</h2>
+                <ul>
+                    <li><strong>Камера (android.permission.CAMERA):</strong> використовується виключно в момент сканування QR-кодів або штрихкодів товарів. Жодні зображення або відеопотоки не записуються та не передаються.</li>
+                    <li><strong>Мережевий доступ (android.permission.INTERNET):</strong> використовується лише за умови налаштування мерчантом прямої взаємодії з банківським API для підтвердження надходження коштів. Додаток не використовує трекінг, аналітичні шпигунські модулі чи рекламні SDK.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. Безпека та захист неповнолітніх</h2>
+                <p>Додаток призначений для суб'єктів підприємницької діяльності та повнолітніх користувачів (18+). Ми не збираємо жодних персональних даних дітей.</p>
+            </section>
+
+            <section>
+                <h2>4. Контакти розробника</h2>
+                <p>З будь-яких питань щодо політики конфіденційності та роботи QR-POS ви можете зв'язатися з нами:</p>
+                <p>Електронна пошта: <strong>auratectstudio@gmail.com</strong><br>Розробник: <strong>AuraTect Studio</strong></p>
+            </section>
+        </main>
+
+        <!-- ENGLISH -->
+        <main id="content-en" style="display: none;">
+            <div class="callout-box">
+                <div class="callout-title">🔒 Local-First Architecture &amp; Privacy by Design</div>
+                <p style="margin-bottom: 0;"><strong>QR-POS</strong> is engineered with a strict <em>Privacy-by-Design</em> philosophy. Product catalogs, shopping carts, order histories, and merchant receipts are stored <strong>strictly locally on your device</strong>. We do not collect, share, or sell your commercial or personal data.</p>
+            </div>
+
+            <section>
+                <h2>1. Data Processed by the Application</h2>
+                <p>QR-POS operates as an autonomous point-of-sale terminal under complete merchant control:</p>
+                <ul>
+                    <li><strong>Inventory &amp; Catalog:</strong> product names, prices, SKUs, and categories (stored securely on device).</li>
+                    <li><strong>Transaction History:</strong> totals, timestamps, and order statuses (saved locally in device storage).</li>
+                    <li><strong>Merchant Payment Credentials:</strong> IBAN or payment identifier configured by merchant solely for dynamic QR code rendering on the terminal screen.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>2. Application Permissions</h2>
+                <ul>
+                    <li><strong>Camera (android.permission.CAMERA):</strong> used solely for real-time scanning of item barcodes and payment QR codes. No visual media is ever recorded or uploaded.</li>
+                    <li><strong>Network Access (android.permission.INTERNET):</strong> optional, utilized exclusively if the merchant configures direct bank webhook verification. The app contains zero third-party ad networks or tracking trackers.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. Contact Information</h2>
+                <p>For questions or compliance inquiries regarding QR-POS:</p>
+                <p>Email: <strong>auratectstudio@gmail.com</strong><br>Developer: <strong>AuraTect Studio</strong></p>
+            </section>
+        </main>
+
+        <footer>
+            &copy; 2026 AuraTect Studio. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.getElementById('content-uk').style.display = lang === 'uk' ? 'block' : 'none';
+            document.getElementById('content-en').style.display = lang === 'en' ? 'block' : 'none';
+            document.getElementById('btn-uk').className = 'lang-btn ' + (lang === 'uk' ? 'active' : '');
+            document.getElementById('btn-en').className = 'lang-btn ' + (lang === 'en' ? 'active' : '');
+            document.getElementById('page-title').innerText = lang === 'uk' ? 'Політика конфіденційності' : 'Privacy Policy';
+        }
+    </script>
+</body>
+</html>
